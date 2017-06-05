@@ -7,6 +7,7 @@ public class Application {
                 .lastName("Nowak")
                 .age(23)
                 .phoneNumber("123456789")
+                .zipCode("asdadfasd")
                 .build();
         System.out.println(user);
     }
