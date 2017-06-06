@@ -20,6 +20,13 @@ public class Application {
 
         List<Action> actions = Arrays.asList(action, action1);
 
+        List<String> names = Arrays.asList("Szymon", "Adam", "Anna");
+        names.stream()
+                .filter(new Blabla())
+                .flatMap(e -> Arrays.asList(e.split("")).stream())
+                .distinct()
+                .sorted()
+                .forEach(System.out::println);
         actions.forEach(e -> e.doAction());
     }
 }
